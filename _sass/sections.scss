@@ -12,3 +12,9 @@
   max-width: 1112px;
   padding: 0 1rem;
 }
+
+@media (min-width: 768px) {
+  .section--container {
+    padding: 0 2rem;
+  }
+}

@@ -1,6 +1,6 @@
 .nav__container {
   box-sizing: border-box;
-  padding: 1rem;
+  padding: 0.25rem 1rem;
   position: fixed;
   width: 100%;
   z-index: 10;
@@ -47,12 +47,25 @@
 }
 
 .nav__link {
-  color: $tan;
+  color: $tan-light;
   font-size: 22px;
   font-weight: bold;
   &:hover,
   &:focus,
   &:visited {
-    color: $tan;
+    color: $tan-light;
+  }
+}
+
+.nav__logo {
+  border-radius: 100%;
+  box-shadow: $box-shadow;
+  height: auto;
+  width: 3rem;
+}
+
+@media (min-width: 768px) {
+  .nav__container {
+    padding: 0.25rem 2rem;
   }
 }
