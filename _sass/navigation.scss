@@ -1,0 +1,58 @@
+.nav__container {
+  box-sizing: border-box;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav--primary {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  margin: auto;
+  max-width: 1200px;
+  justify-content: space-between;
+  transition: box-shadow 0.3s ease;
+}
+.nav--primary::before {
+  background-color: $brown;
+  box-shadow: none;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateY(-100%);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  width: 100%;
+  z-index: -1;
+}
+
+.nav--primary.nav--active::before {
+  box-shadow: $box-shadow;
+  transform: translateY(0);
+}
+
+.nav__links {
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  > *:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+
+.nav__link {
+  color: $tan;
+  font-size: 22px;
+  font-weight: bold;
+  &:hover,
+  &:focus,
+  &:visited {
+    color: $tan;
+  }
+}

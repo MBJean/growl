@@ -1,0 +1,92 @@
+---
+layout: default
+---
+
+<section class="section--hero hero--landing">
+  <div class="hero__text">
+    <h1>Growl!</h1>
+    <p class="hero__subhead">Beer • Wine • Cocktails</p>
+  </div>
+  <p class="hero__banner"><strong>Happy Hour</strong> 3–7pm Mon–Fri! Enjoy $2 off draughts at GROWL​!</p>
+</section>
+
+<section class="section--container">
+  <h2>Hours & Location</h2>
+  <div class="container--content-left">
+    <div>
+      <p>Stop by Growl! at 2995 N. High St. for a pint, glass of wine, or classic cocktail! Located in the heart of Clintonville, Growl! is easy to get to by car, bus, bike, or even on foot. We’re open the following hours:</p>
+      <ol class="content__hours">
+        <li>
+          <strong>Monday–Thursday</strong>
+          <span>4:00pm–11:00pm</span>
+        </li>
+        <li>
+          <strong>Friday–Saturday</strong>
+          <span>12:00pm–1:00am</span>
+        </li>
+        <li>
+          <strong>Sunday</strong>
+          <span>Closed</span>
+        </li>
+      </ol>
+      <p>Happy hour every Monday through Thursday from 3-7pm! Enjoy $2 off draughts.</p>
+      <p>Parking is available behind the building on W. Tulane Rd. Check the signs for designated Growl! spots. Additional parking is available along N. High St. and in the surrounding neighborhood.</p>
+      <p>Avoid parking issues by taking public transit, biking, or walking! There’s a COTA stop right outside the door and the Olentangy Greenway Trail is less than half a mile away.</p>
+    </div>
+    <div>
+      <a id='map-container' href='https://www.google.com/maps/place/GROWL!/@40.0231647,-83.018238,16z/data=!4m5!1m2!2m1!1sGROWL*21!3m1!1s0x88388c18971a8ddf:0x185ba49bc677dc4a'><img class="style--box-shadow" src='https://maps.googleapis.com/maps/api/staticmap?center=40.023291,-83.013940&zoom=16&size=540x398&maptype=roadmap&markers=color:C53827%7Clabel:G%7C40.023240,-83.013900&markers=color:green%7Clabel:G%7C40.711614,-74.012318&markers=color:red%7Clabel:C%7C40.718217,-73.998284&key=AIzaSyCAv1BEMb1iSiL19YV5_WTgn1LuLO0XRRE' alt="Google map of Growl in the Clintonville neighborhood of Columbus, OH"></a>
+    </div>
+  </div>
+  <div id="carousel">
+  </div>
+</section>
+
+<section class="section--container">
+  <h2>Why Growl?</h2>
+  <div class="container--content-left">
+    <div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <div class="style--right">
+        <a class="btn">Learn More</a>
+      </div>
+    </div>
+    <div>
+      <img src="assets/images/landing-fox.jpg" alt="An image of a wood-carved fox made by artist Minnie Adkins" class="style--box-shadow" />
+    </div>
+  </div>
+  <div id="reviews">
+  </div>
+</section>
+
+<section class="section--container">
+  <h2>Contact Us</h2>
+  <div class="container--content-left">
+    <div>
+      <p>Stop by, give us a call, email us, or find us on social media.</p>
+      <p>
+        <strong>Location:</strong>
+        2995 N. High St., Columbus, OH 43202
+      </p>
+      <p>
+        <strong>Phone</strong>
+        <a href="tel:6144472337">614-447-BEER (2337)</a>
+      </p>
+    </div>
+    <div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function initMap() {
+    var mapDiv = document.getElementById('map');
+    if (mapDiv) {
+      var map = new google.maps.Map(mapDiv, {
+        center: {lat: 40.023282, lng: -83.013942},
+        zoom: 19
+      });
+    }
+  }
+</script>
+<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCAv1BEMb1iSiL19YV5_WTgn1LuLO0XRRE&callback=initMap' type='text/javascript'></script>

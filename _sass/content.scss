@@ -1,0 +1,17 @@
+.content__hours {
+  background-color: $white;
+  box-shadow: $box-shadow;
+  margin: 2rem 0;
+  padding: 1rem;
+  > * {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    > :last-child {
+      text-align: right;
+    }
+  }
+  > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}

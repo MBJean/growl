@@ -1,0 +1,54 @@
+html {
+  font-size: 16pt;
+  line-height: 1;
+}
+
+body {
+  background-color: $background-color;
+  color: $brown;
+  font-family: $font-body;
+}
+
+h1,
+h2 {
+  color: $red;
+  font-family: $font-header;
+}
+
+h1 {
+  font-size: 72pt;
+}
+
+h2 {
+  font-size: 45pt;
+  margin-bottom: 2rem;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+strong {
+  font-weight: bold;
+}
+
+a {
+  color: $red;
+  font-weight: bold;
+  &:hover,
+  &:focus,
+  &:visited {
+    color: $red;
+  }
+}
+
+.btn {
+  background-color: $red;
+  border-radius: 2pt;
+  box-shadow: $box-shadow;
+  color: $tan;
+  display: inline-block;
+  padding: 1.1rem 2.2rem;
+  text-transform: uppercase;
+}
