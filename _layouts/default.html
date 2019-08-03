@@ -19,19 +19,22 @@
     <link rel="stylesheet" href="assets/main.css">
     <link rel="stylesheet" href="assets/css/index.css">
     <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Anton|Source+Sans+Pro:400,400i,700,700i&display=swap" rel="stylesheet">
   </head>
   <body>
 
     <header class="nav__container" role="banner">
       <nav id="primary-navigation" class="nav--primary">
-        <a href="/" title="Home" class="style--image-link">
-          <img src="assets/images/logo-growl.png" alt="Growl!'s logo'" class="nav__logo" />
-        </a>
         <ul class="nav__links">
           <li><a class="nav__link" href="/about">About</a></li>
           <li><a class="nav__link" href="/drink">Drink</a></li>
           <li><a class="nav__link" href="/food">Food</a></li>
+          <li>
+            <a href="/" title="Home" class="style--image-link nav__logo">
+              <img src="assets/images/logo-growl.png" alt="Growl!'s logo'" />
+            </a>
+          </li>
           <li><a class="nav__link" href="/events">Events</a></li>
           <li><a class="nav__link" href="/on-display">On Display</a></li>
         </ul>
@@ -81,15 +84,15 @@
           <h3>Business hours</h3>
           <ol>
             <li>
-              <strong>Monday–Thursday</strong>
+              <span>Monday–Thursday</span>
               <span>4:00pm–11:00pm</span>
             </li>
             <li>
-              <strong>Friday–Saturday</strong>
+              <span>Friday–Saturday</span>
               <span>12:00pm–1:00am</span>
             </li>
             <li>
-              <strong>Sunday</strong>
+              <span>Sunday</span>
               <span>Closed</span>
             </li>
           </ol>
