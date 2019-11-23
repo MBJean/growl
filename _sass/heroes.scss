@@ -60,11 +60,14 @@
   box-sizing: border-box;
   color: $red;
   display: inline-block;
-  margin: 0 auto;
+  left: 50%;
+  margin-bottom: 0;
+  max-width: $container-width;
   padding: 0.5rem 1rem;
   position: absolute;
   text-align: center;
-  transform: translateY(50%);
+  transform: translate(-50%, 50%);
+  width: calc(100% - 2rem);
 }
 
 @media (min-width: 768px) {
