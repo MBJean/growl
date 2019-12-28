@@ -1,6 +1,6 @@
 .nav__container {
   box-sizing: border-box;
-  padding: 1rem;
+  padding: 0.25rem 1rem;
   position: fixed;
   width: 100%;
   z-index: 10;
@@ -34,25 +34,65 @@
   transform: translateY(0);
 }
 
+.nav--active .nav__logo {
+  height: 3rem;
+  width: 3rem;
+}
+
 .nav__links {
   align-items: center;
   display: flex;
   font-weight: bold;
   list-style: none;
-  margin: 0;
   padding: 0;
-  > *:not(:last-child) {
-    margin-right: 2rem;
+  width: 100%;
+  > *:not(:last-child):not(:first-child) {
+    margin-right: 1rem;
+  }
+  > :nth-child(2) {
+    margin-left: auto;
   }
 }
 
 .nav__link {
-  color: $tan;
+  color: $tan-light;
   font-size: 22px;
   font-weight: bold;
   &:hover,
   &:focus,
   &:visited {
-    color: $tan;
+    color: $tan-light;
+  }
+}
+
+.nav__logo-container {
+  margin-right: auto;
+}
+
+.nav__logo {
+  border-radius: 100%;
+  box-shadow: $box-shadow;
+  display: inline-block;
+  height: 3rem;
+  transition: all 0.3s ease;
+  width: 3rem;
+  > * {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  .nav__container {
+    padding: 0.25rem 2rem;
+  }
+  .nav__logo {
+    height: 6rem;
+    width: 6rem;
+  }
+  .nav__links {
+    > *:not(:last-child):not(:first-child) {
+      margin-right: 1rem;
+    }
   }
 }

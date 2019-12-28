@@ -1,0 +1,47 @@
+.card,
+.card--review {
+  background-color: $white;
+  padding: 1.5rem;
+}
+
+
+.card {
+  box-shadow: $box-shadow;
+}
+
+.card--review {
+  border-radius: 1rem;
+  box-shadow: $box-shadow-soft;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.card--review:nth-child(odd)::after {
+  border-top: 3rem solid $white;
+  border-left: 3rem solid transparent;
+  content: '';
+  height: 0;
+  position: absolute;
+  right: 10%;
+  top: 100%;
+  width: 0;
+}
+
+.card--review:nth-child(even)::after {
+  border-top: 3rem solid $white;
+  border-right: 3rem solid transparent;
+  content: '';
+  height: 0;
+  left: 10%;
+  position: absolute;
+  top: 100%;
+  width: 0;
+}
+
+.card__stars {
+  margin: 0.5rem 0 0.25rem;
+}
+
+.card__star {
+  color: $red;
+}

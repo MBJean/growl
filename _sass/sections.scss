@@ -9,6 +9,12 @@
 
 .section--container {
   margin: 4rem auto;
-  max-width: 1112px;
+  max-width: $container-width;
   padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .section--container {
+    padding: 0 2rem;
+  }
 }

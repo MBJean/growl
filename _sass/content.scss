@@ -1,17 +1,22 @@
 .content__hours {
-  background-color: $white;
-  box-shadow: $box-shadow;
-  margin: 2rem 0;
-  padding: 1rem;
-  > * {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    > :last-child {
-      text-align: right;
-    }
-  }
+  margin: 1rem 0;
   > *:not(:last-child) {
     margin-bottom: 1rem;
+  }
+}
+
+.carousel {
+  > *:not(:first-child):not(:last-child) {
+    margin: 1rem 0;
+  }
+}
+
+
+@media (min-width: $breakpoint-md) {
+  .carousel {
+    display: flex;
+    > *:not(:first-child):not(:last-child) {
+      margin: 0 1rem;
+    }
   }
 }
