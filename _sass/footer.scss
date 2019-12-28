@@ -26,19 +26,6 @@
   }
 }
 
-.footer__promotional-images {
-  align-items: center;
-  display: flex;
-  > * {
-    height: auto;
-    max-width: 7rem;
-    width: 100%;
-  }
-  > :first-child {
-    margin-right: 1rem;
-  }
-}
-
 .footer__nav-links {
   > * {
     margin-bottom: 0.5rem;
@@ -52,6 +39,21 @@
   &:focus,
   &:visited {
     color: $tan-light;
+  }
+}
+
+@media (min-width: 350px) {
+  .footer__promotional-images {
+    align-items: center;
+    display: flex;
+    > * {
+      height: auto;
+      max-width: 7rem;
+      width: 100%;
+    }
+    > :first-child {
+      margin-right: 1rem;
+    }
   }
 }
 
